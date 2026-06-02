@@ -27,7 +27,7 @@
     $ridepos4Bool = true;
     $destination4Bool = true;
 
-    $json = file_get_contents('API/textdata.json');
+    $json = file_get_contents('api/textdata.json');
     $json = mb_convert_encoding($json, "UTF8" ,  'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
     $data = json_decode($json,true);/**/
 
@@ -104,7 +104,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="CSS/styles.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <style>
             main{
                 min-width:1300px;
@@ -1886,7 +1886,7 @@
             </div>
         </main>
         <footer></footer>
-        <script src="JAVA/script.js"></script>
-        <script src="JAVA/signbord.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/signbord.js"></script>
     </body>
 </html>
